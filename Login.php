@@ -1,3 +1,6 @@
+<?php
+require_once('config.php')
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -48,11 +51,39 @@
                   </div>
 
                   <div class="CTA">
-                     <input type="submit" value="Login">
+                     <input type="submit" id="login" name="button" value="Login">
                      <a href="#" class="switch">I'm New</a>
                   </div>
                </form>
             </div><!-- End Login Form -->
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+            <script>
+               $(function(){
+                  $('#login').click(function(e){
+                     var valid = this.form.checkValidity();
+                     if(valid){
+                        var loginemail = $('#loginemail').val();
+                        var loginpassword = $('#loginpassword').val();
+                     }
+                     e.preventDefault();
+                     $.ajax({
+                        type: 'POST',
+                        url: 'jslogin.php',
+                        data:  {loginemail: loginemail, loginpassword: loginpassword},
+                        success: function(data){
+                           alert(data);
+                           if($.trim(data) === "1"){
+                              setTimeout(' window.location.href =  "index.php"', 1000);
+                           }
+                        },
+                        error: function(data){
+                           alert('there were erros while doing the operation.');
+                        }
+                     });
+                  });
+               });
+         </script>
 
 
             <!-- Signup Form -->
@@ -61,13 +92,13 @@
 
                   <div class="form-group">
                      <label for="name">Full Name</label>
-                     <input type="text" name="username" id="name" class="name">
+                     <input type="text" name="fullname" id="fullname" class="name">
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="email">Email Adderss</label>
-                     <input type="email" name="emailAdress" id="email" class="email">
+                     <input type="email" name="email" id="email" class="email">
                      <span class="error"></span>
                   </div>
 
@@ -96,11 +127,64 @@
                   </div>
 
                   <div class="CTA">
-                     <input type="submit" value="Signup Now" id="submit">
+                     <input type="submit" value="Signup Now" id="submit" name="create">
                      <a href="#" class="switch">I have an account</a>
                   </div>
                </form>
             </div><!-- End Signup Form -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type= "text/javascript">
+               $(function(){
+                  $('#submit').click(function(e){
+                     var valid = this.form.checkValidity();
+
+                     if(valid){
+                        var fullname   = $('#fullname').val();
+                        var email      = $('#email').val();
+                        var phone      = $('#phone').val();
+                        var aadhar     = $('#aadhar').val();
+                        var password   = $('#password').val();
+
+                        e.preventDefault();
+
+                        $.ajax({
+                           type : 'POST',
+                           url : 'process.php',
+                           data : {fullname: fullname,email: email,phone: phone,aadhar: aadhar,password: password},
+
+                           success : function(data){
+                              Swal.fire({
+                                 'title': 'Successful',
+                                 'text': data,
+                                 'icon':'success'
+                              })
+                              setTimeout(function(){
+                                 window.location.href = ""; //ADD REDIRECT ADDRESS
+                              },2000);
+                           },
+                           error : function(data){
+                              Swal.fire({
+                                 'title': 'ERROR',
+                                 'text': 'There were errors while saving the data.',
+                                 'icon':'error'
+
+                              })
+                           }
+                        });
+
+                        alert('true');   
+                     }else{
+                        alert('false');
+                     }
+                  });
+               });
+
+
+
+
+
+            </script>
          </div>
       </div>
 
