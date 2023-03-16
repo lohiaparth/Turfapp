@@ -6,7 +6,7 @@ require_once('config.php');
 $loginemail = $_POST['loginemail'];
 $loginpassword = $_POST['loginpassword'];
 
-$sql = "SELECT * FROM users WHERE loginemail = ? AND loginpassword = ? LIMIT 1"; //try db names of fields if doesnt work
+$sql = "SELECT * FROM users WHERE email = ? AND password = ? LIMIT 1"; //try db names of fields if doesnt work
 $stmtselect  = $db->prepare($sql);
 $result = $stmtselect->execute([$loginemail, $loginpassword]);
 
