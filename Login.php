@@ -47,7 +47,7 @@ require_once('config.php')
 
                   <div class="form-group">
                      <label for="loginPassword">Password</label>
-                     <input type="password" name="loginPassword" id="loginPassword" required>
+                     <input type="password" name="loginpassword" id="loginpassword" required>
                   </div>
 
                   <div class="CTA">
