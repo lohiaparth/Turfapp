@@ -47,7 +47,7 @@ require_once('config.php')
 
                   <div class="form-group">
                      <label for="loginPassword">Password</label>
-                     <input type="password" name="loginPassword" id="loginPassword" required>
+                     <input type="password" name="loginpassword" id="loginpassword" required>
                   </div>
 
                   <div class="CTA">
@@ -154,22 +154,22 @@ require_once('config.php')
                            data : {fullname: fullname,email: email,phone: phone,aadhar: aadhar,password: password},
 
                            success : function(data){
-                              Swal.fire({
-                                 'title': 'Successful',
-                                 'text': data,
-                                 'icon':'success'
-                              })
+                              // Swal.fire({
+                              //    'title': 'Successful',
+                              //    'text': data,
+                              //    'icon':'success'
+                              // })
                               setTimeout(function(){
-                                 window.location.href = ""; //ADD REDIRECT ADDRESS
+                                 window.location.href = "index.php"; //ADD REDIRECT ADDRESS
                               },2000);
                            },
                            error : function(data){
-                              Swal.fire({
-                                 'title': 'ERROR',
-                                 'text': 'There were errors while saving the data.',
-                                 'icon':'error'
+                              // Swal.fire({
+                              //    'title': 'ERROR',
+                              //    'text': 'There were errors while saving the data.',
+                              //    'icon':'error'
 
-                              })
+                              // })
                            }
                         });
 
