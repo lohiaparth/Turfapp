@@ -6,7 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello</h1>
+    <header>
+        <h3>about us</h3>
+        <h3>contact us</h3>
+        <h3>help</h3>
+        <h3>find match</h3>
+    </header>
+
+    <button onclick="window.location.href='secondarypages/invite.php'">Invite Players</button>
+    <button onclick="window.location.href='secondarypages/viewteam.php'">View Team</button>
+    <button onclick="window.location.href='secondarypages/findmatch.php'">Find Match</button>
+
     
 </body>
 </html>
