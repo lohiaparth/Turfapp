@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var img = document.getElementById('img');
-    var slides = ['cricket-slider.webp', 'basketball-slider.webp', 'football-slider.jpeg', 'football.jpg'];
+    var slides = ['cricket-slider.webp', 'basketball-slider.webp', 'football-slider.jpeg', 'football.jpg', 'basketball.jpg'];
     var start = 0;
 
     function slider() {
