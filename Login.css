@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("bg1.jpg");
+  background-image: url("bghome.jpg");
   background-size: 100%;
   /* background: #96E072; */
 
@@ -137,7 +137,7 @@ section#formHolder {
   min-height: 550px;
   margin-top: 30px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  color: #5d8f00;
+  color: #ffffff;
   padding: 30px 0 60px;
   transition: all 0.9s cubic-bezier(1, -0.375, 0.285, 0.995);
   position: absolute;
@@ -145,10 +145,10 @@ section#formHolder {
   left: -30%;
   width: 130%;
   overflow: hidden;
-  background: rgba( 255, 255, 255, 0.3 );
+  background: rgba(173, 255, 126, 0.7);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -171,10 +171,10 @@ section#formHolder {
   position: relative;
 }
 .form form .form-group.hasError input {
-  border-color: #ff4242 !important;
+  border-color: #3E8914 !important;
 }
 .form form .form-group.hasError label {
-  color: #ff4242 !important;
+  color: #3E8914 !important;
 }
 .form form label {
   font-size: 12px;
@@ -201,7 +201,7 @@ section#formHolder {
   display: block;
   padding: 10px 0;
   width: 100%;
-  border-bottom: 1px solid #5d8f00;
+  border-bottom: 1px solid #ffffff;
   color: #444;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
