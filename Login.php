@@ -41,7 +41,7 @@ require_once('config.php')
             <div class="login form-peice switched">
                <form class="login-form" action="#" method="post">
                   <div class="form-group">
-                     <label for="loginemail">Email Adderss</label>
+                     <label for="loginemail">Email Address</label>
                      <input type="email" name="loginemail" id="loginemail" required>
                   </div>
 
@@ -97,7 +97,7 @@ require_once('config.php')
                   </div>
 
                   <div class="form-group">
-                     <label for="email">Email Adderss</label>
+                     <label for="email">Email Address</label>
                      <input type="email" name="email" id="email" class="email">
                      <span class="error"></span>
                   </div>
