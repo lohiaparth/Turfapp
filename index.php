@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #030c1f;">
         <header>
             <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
             <nav>
