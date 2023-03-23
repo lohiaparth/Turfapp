@@ -17,7 +17,7 @@
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="#">Log out</a>
+            <a class="cta" onclick="window.location.href='Login.php'">Log In</a>
         </header>
 
         <script src="slider-script.js"></script>
