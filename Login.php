@@ -43,7 +43,7 @@ require_once('config.php')
             <div class="login form-peice switched">
                <form class="login-form" action="#" method="post">
                   <div class="form-group">
-                     <label for="loginemail">Email Adderss</label>
+                     <label for="loginemail">Email Address</label>
                      <input type="email" name="loginemail" id="loginemail" required>
                   </div>
 
@@ -94,37 +94,37 @@ require_once('config.php')
 
                   <div class="form-group">
                      <label for="name">Full Name</label>
-                     <input type="text" name="fullname" id="fullname" class="name">
+                     <input type="text" name="fullname" id="fullname" class="name" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
-                     <label for="email">Email Adderss</label>
-                     <input type="email" name="email" id="email" class="email">
+                     <label for="email">Email Address</label>
+                     <input type="email" name="email" id="email" class="email" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="phone">Phone Number</label>
-                     <input type="text" name="phone" id="phone" class="phone">
+                     <input type="text" name="phone" id="phone" class="phone" required>
                      <span class="error"></span>
                   </div>
                   
                   <div class="form-group">
                      <label for="aadhar">Aadhar Number</label>
-                     <input type="text" name="aadhar" id="aadhar" class="aadhar">
+                     <input type="text" name="aadhar" id="aadhar" class="aadhar" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="password">Password</label>
-                     <input type="password" name="password" id="password" class="pass">
+                     <input type="password" name="password" id="password" class="pass" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="passwordCon">Confirm Password</label>
-                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm" required>
                      <span class="error"></span>
                   </div>
 
