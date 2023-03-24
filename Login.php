@@ -92,37 +92,37 @@ require_once('config.php')
 
                   <div class="form-group">
                      <label for="name">Full Name</label>
-                     <input type="text" name="fullname" id="fullname" class="name">
+                     <input type="text" name="fullname" id="fullname" class="name" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="email">Email Address</label>
-                     <input type="email" name="email" id="email" class="email">
+                     <input type="email" name="email" id="email" class="email" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="phone">Phone Number</label>
-                     <input type="text" name="phone" id="phone" class="phone">
+                     <input type="text" name="phone" id="phone" class="phone" required>
                      <span class="error"></span>
                   </div>
                   
                   <div class="form-group">
                      <label for="aadhar">Aadhar Number</label>
-                     <input type="text" name="aadhar" id="aadhar" class="aadhar">
+                     <input type="text" name="aadhar" id="aadhar" class="aadhar" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="password">Password</label>
-                     <input type="password" name="password" id="password" class="pass">
+                     <input type="password" name="password" id="password" class="pass" required>
                      <span class="error"></span>
                   </div>
 
                   <div class="form-group">
                      <label for="passwordCon">Confirm Password</label>
-                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                     <input type="password" name="passwordCon" id="passwordCon" class="passConfirm" required>
                      <span class="error"></span>
                   </div>
 
