@@ -17,7 +17,7 @@
                     <li><a href="#">About</a></li>
                 </ul>
             </nav>
-            <a class="cta" onclick="window.location.href='Login.php'">Log In</a>
+            <a class="cta" onclick="window.location.href='Siddhi/Home.html'">Log Out</a>
         </header>
 
         <script src="slider-script.js"></script>
