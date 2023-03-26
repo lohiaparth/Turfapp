@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("Bg4.webp");
+  background-image: url("bghome.jpg");
   background-size: 100%;
   /* background: #96E072; */
 
@@ -322,3 +322,4 @@ footer p a:hover, footer p a:focus:hover {
     font-size: 50px !important;
   }
 }
+

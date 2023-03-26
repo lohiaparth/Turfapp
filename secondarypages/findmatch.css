@@ -1,0 +1,25 @@
+.turf-box{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    /* text-align: center; */
+}
+.turf-details{
+    margin: auto;
+    margin-top: 230px;
+    width: 90%;
+    height: 30%;
+    overflow: hidden;
+    border: 1px solid black;
+    
+    
+}
+
+.turf-name{
+    border: 1px solid black;
+    font-size: 10px;
+    
+}
