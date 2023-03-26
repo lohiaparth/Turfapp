@@ -1,6 +1,6 @@
-<?php
+<?php 
 require_once('config.php')
-?>
+?> 
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -8,7 +8,9 @@ require_once('config.php')
   <title>LOGIN PAGE</title>
   <link rel="stylesheet" href="Login.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="Login.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+   <link rel="stylesheet" href="Login.css">
 
 </head>
 <body>
@@ -127,11 +129,11 @@ require_once('config.php')
                   </div>
 
                   <div class="CTA">
-                     <input type="submit" value="Signup Now" id="submit" name="create">
+                  <input type="submit" value="Signup Now" id="submit" name="create">
                      <a href="#" class="switch">I have an account</a>
                   </div>
                </form>
-            </div><!-- End Signup Form -->
+            </div><!-- End Signup Form --> 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
             <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script type= "text/javascript">
@@ -192,8 +194,9 @@ require_once('config.php')
 
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+   <script  src="./script.js"></script>
 
 </body>
 </html>
