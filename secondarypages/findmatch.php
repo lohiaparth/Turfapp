@@ -14,13 +14,18 @@ require_once("config.php");
     <h1>hello</h1>
 
     <?php
-    require("findmatchprocess.php");
+    // require("findmatchprocess.php");
     ?>
     <div class="turf-box">
-        <img src="" alt=""> <!-- turf image -->
+        <!-- <div class="img">
+            <img src="Bg4.webp" alt="" class="img_size"> turf image -->
+        <!-- </div> -->
         <div class="turf-details">
+            <div class="img">
+                <img src="Bg4.webp" alt="" class="img_size"> <!-- turf image -->
+            </div> 
             <div class="turf-name">
-                <h1>orlem lawn</h1>
+                <h1>Orlem lawn</h1>
             </div>
             <div class="turf-address">
                 <!-- turf address -->
@@ -32,7 +37,7 @@ require_once("config.php");
             </div>
             <div class="turf-sports">
                 <!-- turf sports -->
-                <h4>basketball</h4><h4>football</h4>
+                <h4>basketball & football</h4>
             </div>
         </div>
     </div>
