@@ -33,19 +33,24 @@ if(isset($_POST)){
     echo $sport;
     $sportstring = implode(',',$sport);
     echo $sportstring;
-    $images     = $_FILES['images']['tmp_name'];
-//     echo $images;
+    $images     = $_POST['images'];
+    echo $images;
 
-//     // if(move_uploaded_file($images, 'temp') ===  true){
-//     //     $getimg = base64_encode(file_get_contents('temp'));
-//     //     $insert = "INSERT INTO tablename(images) VALUES('$getimg')";
-//     //     if(my)
-//     // }
+    // $base64_image = base64_encode(file_get_contents($image));
+
+    // echo $base64_image;
+
+
+    // if(move_uploaded_file($images, 'temp') ===  true){
+    //     $getimg = base64_encode(file_get_contents('temp'));
+    //     $insert = "INSERT INTO tablename(images) VALUES('$getimg')";
+        
+    // }
     
 
-$sql = "INSERT INTO turfs (name, email, contact1, contact2, address, sport) VALUES(?,?,?,?,?,?)";
+$sql = "INSERT INTO turfs (name, email, contact1, contact2, address, sport, images) VALUES(?,?,?,?,?,?,?)";
 $stmtinsert = $db->prepare($sql);
-$result = $stmtinsert->execute([$name, $email, $contact1, $contact2, $address, $sportstring ]);
+$result = $stmtinsert->execute([$name, $email, $contact1, $contact2, $address, $sportstring, $images ]);
 
 }
 
