@@ -23,7 +23,7 @@
         <script src="slider-script.js"></script>
 
         <div class="row">
-            <div class="auto-slider">
+            <div class="slider">
                 <div id="img" class="fade-in">
                     <img  src="football-slider.jpeg"/>
                 </div>
