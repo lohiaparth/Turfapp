@@ -14,6 +14,16 @@ require_once('config.php')
 
 </head>
 <body>
+<header>
+   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+      <nav>
+         <ul class="nav__links">
+            <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+            <li><a href="/Turfapp/Turfside/addturf.php">About</a></li>
+           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+         </ul>
+      </nav>
+</header>
 <!-- partial:index.partial.html -->
 <div class="container">
    <section id="formHolder">

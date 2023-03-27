@@ -10,7 +10,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 15px 10%;
-    background-color: #24252a;
+    background-color: #000000;
   }
   
   .logo {
@@ -41,13 +41,13 @@
   }
   
   .nav__links li a:hover {
-    color: #0088a9;
+    color: #a9b388;
   }
   
   .cta {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: #548c1c;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -55,7 +55,7 @@
   }
   
   .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: #2e590e;
   }
 
   * {
@@ -91,18 +91,20 @@
   .side {
     flex: 50%;
     background-color: #ffffff;
-    height: 700px;
+    background-image: url("home_bg.jpg");
+    background-size: 100%;
+    height: 750px;
     padding: 0px;
     min-height: 665px;
-    background-image: url("footbal.jpg");
     background-position: 50% 50%;
   }
   
   /* Main column */
   .main {   
     flex: 50%;
-    background-color: #5e5f65;
-    height: 700px;
+    /* background-color: #092906; */
+    background-color: #0c2605;
+    height: 750px;
     padding: 20px;
   }
 
@@ -111,6 +113,7 @@
     font-family: "Montserrat", sans-serif;
     float: right;
     padding-top: 5px;
+    color: #8ebf24;
   }
 
   h2{
@@ -119,6 +122,7 @@
     font-weight: 500;
     text-align: right;
     padding-top: 70px;
+    color: #8ebf24;
   }
 
 
@@ -139,22 +143,27 @@
   button{
     margin-right: 20px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    font-size: 20px;
+    background-color: #548c1c;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     float: right;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
   }
 
   button:hover {
-    opacity: 0.8;
+    background-color: #2e590e;
   }
 
   .footer {
     padding: 15px;
     text-align: center;
-    background: #24252a;
+    background: #010d00;
   }
   .text{
     padding-top: 50%;

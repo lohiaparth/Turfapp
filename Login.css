@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url("bghome.jpg");
-  background-size: 100%;
-  /* background: #96E072; */
+  /* background-image: url("shit4.jpg"); */
+  /* background-size: 100%; */
+  background: #0c2605;
 
 }
 
@@ -35,7 +36,7 @@ section#formHolder {
   background: url(https://goo.gl/A0ynht);
   background-size: cover;
   background-position: center center;
-  color: #96E072;
+  color: #2e590e;
   min-height: 600px;
   position: relative;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -53,11 +54,11 @@ section#formHolder {
   position: absolute;
   top: 0;
   left: 0;
-  background: #134611;
+  background: #8ebf24;
   z-index: -1;
 }
 .brand a.logo {
-  color: #3DA35D;
+  color: #0c2605;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -133,7 +134,7 @@ section#formHolder {
   position: relative;
 }
 .form .form-peice {
-  background: #b0ff50;
+  /* background: #b0ff50; */
   min-height: 550px;
   margin-top: 30px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -145,8 +146,8 @@ section#formHolder {
   left: -30%;
   width: 130%;
   overflow: hidden;
-  background: rgba(173, 255, 126, 0.7);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: #d6ffb7;
+  box-shadow: 0 8px 32px 0 #134611;
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
@@ -185,6 +186,7 @@ section#formHolder {
   transition: all 0.4s;
   cursor: text;
   z-index: -1;
+  color: #5d8f00;
 }
 .form form label.active {
   transform: translateY(10px);
@@ -201,7 +203,7 @@ section#formHolder {
   display: block;
   padding: 10px 0;
   width: 100%;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #5d8f00;
   color: #444;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -211,7 +213,7 @@ section#formHolder {
   border-color: #3E8914;
 }
 .form form span.error {
-  color: #3E8914;
+  color: #ff0000;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   position: absolute;
@@ -236,6 +238,9 @@ section#formHolder {
   border: none;
   font-family: "Montserrat", sans-serif;
 }
+.form form .CTA input:hover{
+  color: #8ebf24;
+}
 .form form .CTA a.switch {
   font-size: 13px;
   font-weight: 400;
@@ -245,9 +250,54 @@ section#formHolder {
   transition: all 0.3s;
 }
 .form form .CTA a.switch:hover {
-  color: #3E8914;
+  color: #0c2605;
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: #000000;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a,
+.page-buttons button {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #a9b388;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 footer {
   text-align: center;
 }
