@@ -14,7 +14,7 @@ require_once("config.php");
     <h1>hello</h1>
 
     <?php
-    // require("findmatchprocess.php");
+    require("findmatchprocess.php");
     ?>
     <div class="turf-box">
         <!-- <div class="img">
