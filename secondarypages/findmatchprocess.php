@@ -33,7 +33,7 @@ if ($result->rowCount() > 0) {
             </div>
             <div class='turf-sports'>
                 <!-- turf sports -->
-                <h4>".$row["sports"]."</h4>
+                <h4>".$row["sport"]."</h4>
             </div>
         </div>
     </div>
