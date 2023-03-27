@@ -12,13 +12,21 @@ $result = $db->query($sql);
 if ($result->rowCount() > 0) {
     // Output data of each row
     while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+
+        
+
+        $imageData = base64_decode(substr($row["images"], strpos($row["images"], ",")+1));
+        
+
+        
+
         echo "<div class='turf-box'>
         <!-- <div class='img'>
             <img src='Bg4.webp' alt='' class='img_size'> turf image -->
         <!-- </div> -->
         <div class='turf-details'>
             <div class='img'>
-                <img src='Bg4.webp' alt='' class='img_size'> <!-- turf image -->
+                <img src='data:image/jpeg;base64,".base64_encode($imageData)."' alt='' class='img_size'> <!-- turf image -->
             </div> 
             <div class='turf-name'>
                 <h1>".$row["name"]."</h1>
@@ -33,7 +41,7 @@ if ($result->rowCount() > 0) {
             </div>
             <div class='turf-sports'>
                 <!-- turf sports -->
-                <h4>".$row["sports"]."</h4>
+                <h4>".$row["sport"]."</h4>
             </div>
         </div>
     </div>
