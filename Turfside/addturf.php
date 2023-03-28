@@ -9,6 +9,16 @@
 
 </head>
 <body>
+<header>
+   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+      <nav>
+         <ul class="nav__links">
+            <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+         </ul>
+      </nav>
+</header>
    <div class="container">
       <div class="row">
          <section id="formHolder">
@@ -37,6 +47,7 @@
                         <!-- Name of Turf -->
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" class="name" required>
+                        <span class="error"></span>
                         <!-- Name of Turf -->
                      </div>
 
@@ -44,6 +55,7 @@
                         <!-- E-mail -->
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" class="email" required>
+                        <span class="error"></span>
                         <!-- E-mail -->
                      </div>
 
@@ -51,11 +63,13 @@
                      <div class="form-group">
                         <label for="contact1">Primary Contact</label>
                         <input type="text" name="contact1" id="contact1" class="contact1" required>
+                        <span class="error"></span>
                      </div>
 
                      <div class="form-group">
                         <label for="contact2">Secondary Contact</label>
                         <input type="text" name="contact2" id="contact2" class="contact2" >
+                        <span class="error"></span>
                      </div>
                      <!-- Contact details -->
 
@@ -63,6 +77,7 @@
                         <!-- Address -->
                         <label for="address">Address</label>
                         <input type="text" id="address" name="address" class="address" required>
+                        <span class="error"></span>
                         <!-- Address -->
                      </div>
 
@@ -162,6 +177,10 @@
 });
 
             </script>
+
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+   <script  src="./addturf.js"></script>
     
 </body>
 </html>

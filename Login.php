@@ -13,13 +13,13 @@ require_once('config.php')
    <link rel="stylesheet" href="Login.css">
 
 </head>
-<body>
+<body>-$GLOBALS
 <header>
    <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
       <nav>
          <ul class="nav__links">
             <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
-            <li><a href="/Turfapp/Turfside/addturf.php">About</a></li>
+            <li><a href="#">About</a></li>
            <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
          </ul>
       </nav>
