@@ -4,7 +4,11 @@ require_once("config.php");
 
 <?php
 
-$sql = "SELECT * FROM turfs";
+if (isset($_POST['sort']) && $_POST['sort'] == 'names') {
+    $sql = "SELECT * FROM turfs ORDER BY name ASC";
+  } else {
+    $sql = "SELECT * FROM turfs";
+  }
 
 $result = $db->query($sql);
 
