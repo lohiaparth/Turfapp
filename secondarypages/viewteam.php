@@ -12,7 +12,7 @@
     <div class="main-box">
 <h2>Team<hr></h2>
 
-<div class="img-box">
+    <div class="img-box">
 <img src="default_user2.png">
 </div>
 
