@@ -172,10 +172,10 @@ section#formHolder {
   position: relative;
 }
 .form form .form-group.hasError input {
-  border-color: #3E8914 !important;
+  border-color: #ff0000  !important;
 }
 .form form .form-group.hasError label {
-  color: #3E8914 !important;
+  color: #ff0000  !important;
 }
 .form form label {
   font-size: 12px;
@@ -210,7 +210,7 @@ section#formHolder {
   z-index: 1;
 }
 .form form input:not([type=submit]).hasError {
-  border-color: #3E8914;
+  border-color: #ff0000;
 }
 .form form span.error {
   color: #ff0000;

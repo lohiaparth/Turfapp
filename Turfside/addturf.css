@@ -1,8 +1,8 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: url("/Turfapp/bghome.jpg");
+    /* background-image: url("/Turfapp/bghome.jpg"); */
     background-size: 100%;
-    /* background: #96E072; */
+    background: #0c2605;;
   
   }
   
@@ -35,7 +35,7 @@ body {
     background: url(https://goo.gl/A0ynht);
     background-size: cover;
     background-position: center center;
-    color: #96E072;
+    color: #2e590e;
     min-height: 600px;
     position: relative;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -53,11 +53,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #134611;
+    background: #8ebf24;
     z-index: -1;
   }
   .brand a.logo {
-    color: #3DA35D;
+    color: #0c2605;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -133,7 +133,7 @@ body {
     position: relative;
   }
   .form .form-peice {
-    background: #b0ff50;
+    /* background: #b0ff50; */
     min-height: 550px;
     margin-top: 30px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -145,8 +145,8 @@ body {
     left: -30%;
     width: 130%;
     overflow: hidden;
-    background: rgba(173, 255, 126, 0.7);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: #d6ffb7;
+    box-shadow: 0 8px 32px 0 #134611;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -171,10 +171,10 @@ body {
     position: relative;
   }
   .form form .form-group.hasError input {
-    border-color: #3E8914 !important;
+    border-color: #ff0000 !important;
   }
   .form form .form-group.hasError label {
-    color: #3E8914 !important;
+    color: #ff0000 !important;
   }
   .form form label {
     font-size: 12px;
@@ -185,6 +185,7 @@ body {
     transition: all 0.4s;
     cursor: text;
     z-index: -1;
+    color: #5d8f00;
   }
   .form form label.active {
     transform: translateY(10px);
@@ -201,17 +202,17 @@ body {
     display: block;
     padding: 10px 0;
     width: 100%;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #5d8f00;
     color: #444;
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     z-index: 1;
   }
   .form form input:not([type=submit]).hasError {
-    border-color: #3E8914;
+    border-color: #ff0000;
   }
   .form form span.error {
-    color: #3E8914;
+    color: #ff0000;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     position: absolute;
@@ -236,6 +237,9 @@ body {
     border: none;
     font-family: "Montserrat", sans-serif;
   }
+  .form form .CTA input:hover{
+    color: #8ebf24;
+  }
   .form form .cta a.switch {
     font-size: 13px;
     font-weight: 400;
@@ -245,7 +249,7 @@ body {
     transition: all 0.3s;
   }
   .form form .cta a.switch:hover {
-    color: #3E8914;
+    color: #0c2605;
   }
   
   footer {
@@ -261,6 +265,45 @@ body {
   }
   footer p a:hover, footer p a:focus:hover {
     color: #3E8914;
+  }
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #000000;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a,
+  .page-buttons button {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #a9b388;
   }
   
   @media (max-width: 768px) {
