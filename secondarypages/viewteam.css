@@ -1,0 +1,26 @@
+.main-box{
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    display: flex;
+}
+
+
+
+h2{
+    text-align: center;
+}
+
+h1{
+    text-align: left;
+}
+
+img{
+    
+    padding-right: 52px;
+    padding-top: 81px;
+    width: 60px;
+    height: 40px;
+}
