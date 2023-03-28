@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Siddhi/HomeStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>HOME</title>
 </head>
 <body style="background-color: #030c1f;">
         <header>
