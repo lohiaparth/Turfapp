@@ -83,16 +83,27 @@
 
                      <!-- Sports -->
                      <div class="form-group">
+                        <div>
                         <label for="sport">Select a sport:</label>
-                     </div>  
+                        </div>
+                        <div>
                               <select id="sport" name="sport" class="sport" multiple required style="margin-left: 145px;">
                                  <option value="football">Football</option>
                                  <option value="basketball">Basketball</option>
                                  <option value="cricket">Cricket</option>
                               </select>
-                         
-                     
+                        </div>  
+                     </div>
                      <!-- Sports -->
+
+                      <!-- Submit -->
+                      <div class="CTA">
+                        <input type="submit" value="List Turf" id="submit" name="create">
+                     </div>
+                     <!-- <div>
+                        <button type="submit" value="List Turf" id="submit" name="create">List Turf</button>
+                     </div> -->
+                     <!-- Submit -->
 
                      <!-- Images -->
                      <div class="form-group"></div>
@@ -101,11 +112,14 @@
                      </div>
                      <!-- Images -->
 
-                     
                      <!-- Submit -->
-                     <input type="submit" value="List Turf" id="submit" name="create">
+                     <!-- <div class="CTA">
+                        <input type="submit" value="List Turf" id="submit" name="create">
+                     </div> -->
+                     <!-- <div>
+                        <button type="submit" value="List Turf" id="submit" name="create">List Turf</button>
+                     </div> -->
                      <!-- Submit -->
-                    
 
 
                   </form>
