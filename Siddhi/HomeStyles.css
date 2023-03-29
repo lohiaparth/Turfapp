@@ -134,10 +134,11 @@
     margin: auto;
   }
   .page-buttons button{
-    margin: 50px;
-    border-radius: 5px;
-    background-color: rgb(43, 159, 68);
+    margin-top: 270px;
+    border-radius: 20px;
+    background-color: #548c1c;
     font-size: 20px;
+
   }
 
   button{
@@ -149,7 +150,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    float: right;
+    float: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
@@ -157,7 +158,7 @@
   }
 
   button:hover {
-    background-color: #2e590e;
+    background-color: #0c2605;
   }
 
   .footer {
@@ -172,10 +173,10 @@
 
   /* For SLider in Index page */
   .slider{
-    width:90%;
-    height:400px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin: 20px auto;
+    width:100%;
+    height:600px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px auto; */
   }
   #img{
     width:100%;
@@ -194,6 +195,23 @@
   .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
+  }
+
+  .container {
+	  display: grid;
+	  grid-template-columns: 390px 390px 390px;
+	  text-align: center;
+	}
+	.column {
+	  padding: 25px; 
+	  height: 400px;
+	  margin: 15px;
+	  background-color: #8ebf24;
+    border-radius: 30px;
+    align-items: center;
+	}
+  p{
+    color: #d6ffb7;
   }
   /* .review{
     height:600px;
