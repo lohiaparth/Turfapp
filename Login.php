@@ -13,7 +13,7 @@ require_once('config.php')
    <link rel="stylesheet" href="Login.css">
 
 </head>
-<body>-$GLOBALS
+<body>
 <header>
    <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
       <nav>
