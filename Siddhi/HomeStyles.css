@@ -195,15 +195,14 @@
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
   }
-  .review{
-    height:550px;
+  /* .review{
+    height:600px;
     background-color: #0c2605;
-  }
-  .h1-review{
-    color: #2e590e;
-  }
+  } */
+
   #feedback {
-    max-width: 60%;
+    max-width: 65%;
+    height: 450px;
     width: 100%;
     margin: 10px auto;
     padding: 20px;
@@ -457,81 +456,109 @@
     border-left: 0;
   }
   
-  .btn {
-    display: inline-block;
-    font-weight: normal;
-    line-height: 1.25;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    border: 1px solid transparent;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .btn:focus, .btn:hover {
-    text-decoration: none;
-  }
-  
-  .btn:focus, .btn.focus {
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
-            box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25);
-  }
-  
-  .btn.disabled, .btn:disabled {
-    cursor: not-allowed;
-    opacity: .65;
-  }
-  
-  .btn:active, .btn.active {
-    background-image: none;
-  }
-  
-  a.btn.disabled,
-  fieldset[disabled] a.btn {
-    pointer-events: none;
-  }
-  
-  .btn-primary {
-    color: #fff;
-    background-color: #0275d8;
-    border-color: #0275d8;
-  }
-  
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #025aa5;
-    border-color: #01549b;
-  }
-  
-  .btn-primary:focus, .btn-primary.focus {
-    -webkit-box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-            box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.5);
-  }
-  
-  .btn-primary.disabled, .btn-primary:disabled {
-    background-color: #0275d8;
-    border-color: #0275d8;
-  }
-  
-  .btn-primary:active, .btn-primary.active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #025aa5;
-    background-image: none;
-    border-color: #01549b;
-  }
-  
   .about{
-    height: 700px;
+    height: 600px;
     background-color: #d6ffb7;
+  }
+
+  h4{
+    align-items: flex;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #0c2605;
+  }
+
+  .about{  
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .h1-about{
+    font-family: "Montserrat", sans-serif;
+    font-size: 65px;
+    color: #2e590e;
+  }
+
+  .h5-about{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 17px;
+    color: #8ebf24;
+  }
+
+  .about-heading{
+    padding-top: 235px;
+  }
+
+  .about-text{
+    padding-top: 125px;
+  }
+
+  .left-about{
+    flex: 50%;
+    /* background-color: #ffffff; */
+    /* background-image: url("home_bg.jpg");
+    background-size: 100%; */
+    height: 600px;
+    padding: 0px;
+    background-position: 50% 50%;
+  }
+  .right-about{
+    flex: 50%;
+    /* background-color: #092906; */
+    /* background-color: #0c2605; */
+    height: 600px;
+    padding: 20px; 
+  }
+  /*Review*/
+  .review-main{
+    height: 600px;
+    background-color: #0c2605;
+  }
+
+  .review-main{  
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .h1-review{
+    font-family: "Montserrat", sans-serif;
+    font-size: 65px;
+    color: #d6ffb7;
+  }
+
+  .h5-review{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 17px;
+    color: #8ebf24;
+  }
+
+  .review-heading{
+    padding-top: 235px;
+  }
+
+  .review-text{
+    padding-top: 20px;
+  }
+
+  .left-review{
+    flex: 50%;
+    /* background-color: #ffffff; */
+    /* background-image: url("home_bg.jpg");
+    background-size: 100%; */
+    height: 600px;
+    padding: 0px;
+    background-position: 50% 50%;
+  }
+  .right-review{
+    flex: 50%;
+    /* background-color: #092906; */
+    /* background-color: #0c2605; */
+    height: 600px;
+    padding: 20px; 
   }
