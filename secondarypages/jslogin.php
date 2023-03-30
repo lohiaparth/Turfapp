@@ -1,10 +1,12 @@
 <?php
 session_start();
 require_once('config.php');
-
+//error_reporting(E_ERROR | E_PARSE);
 
 $loginemail = $_POST['loginemail'];
+//echo $loginemail;
 $loginpassword = $_POST['loginpassword'];
+//echo $loginpassword;
 
 $sql = "SELECT * FROM users WHERE email = ? AND password = ? LIMIT 1"; //try db names of fields if doesnt work
 $stmtselect  = $db->prepare($sql);
