@@ -10,18 +10,18 @@
 </head>
 <body>
 <header>
-   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+   <!-- <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> -->
       <nav>
          <ul class="nav__links">
             <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
-            <li><a href="#">About</a></li>
-           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#about">About</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
          </ul>
       </nav>
 </header>
     <div class="sort-row1">
         <h1 class="h1-invite">INVITE</h1>
-        <h5 class="h5-invite">Invite you team members</h5>
+        <h5 class="h5-invite">Invite your team members</h5>
         <div class="wrap">
             <div class="search">
                 <input type="text" class="searchTerm" id="invitee" placeholder="Enter email of the person you want to invite">

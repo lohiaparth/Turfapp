@@ -33,19 +33,23 @@ if ($result->rowCount() > 0) {
                 <img src='data:image/jpeg;base64,".base64_encode($imageData)."' alt='' class='img_size'> <!-- turf image -->
             </div> 
             <div class='turf-name'>
-                <h1>".$row["name"]."</h1>
+                <h2 class='h2-invite'>".$row["name"]."</h2>
             </div>
             <div class='turf-address'>
                 <!-- turf address -->
-                <h3>".$row["address"]."</h3>
+                <h3 class='h3-invite'>".$row["address"]."</h3>
             </div>
             <div class='turf-contact'>
                 <!-- turf contacts -->
-                <h3>".$row["contact1"]."</h3><h3>".$row["contact2"]."</h3>
+                <h3 class='h3-invite'>".$row["contact1"]."</h3><h3 class='h3-invite'>".$row["contact2"]."</h3>
             </div>
             <div class='turf-sports'>
                 <!-- turf sports -->
-                <h4>".$row["sport"]."</h4>
+                <h4 class='h4-invite'>".$row["sport"]."</h4>
+            </div>
+            <div class='turf-sports'>
+                <!-- selection button -->
+                <button class='selection'>Select</button>
             </div>
         </div>
     </div>
