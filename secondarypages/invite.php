@@ -34,7 +34,10 @@
         </div>
 
     </div>
-
+    <div><center>
+        <h1 class="h1-request">REQUESTS</h1>
+        <h5 class="h5-request">You have your friends Request</h5>
+    </center></div>
     <div class="sort-row2">
         <!-- <table style='border:solid 2px;'>
         <tr>
@@ -44,28 +47,13 @@
         </tr>
         
         </table> -->
-        <div class="page-buttons">
-        <div class="container">
-            <div class="column">
-		                <p> This is first column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/invite.php'" class="invite-players">Invite Players</button>
-	                </div>
-	                
-                    <div class="column">
-		                <p> This is second column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/viewteam.php'" class="view-team">View Team</button>
-	                </div>
-
-	                <div class="column">
-		                <p> This is third column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
-                    </div>
-                    <div class="column">
-		                <p> This is third column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
-                    </div>
-                </div>
-            </div>
+        <div class="invite-class">
+        <div class="invite">
+            <div class="invite-ele"><h3>siddhidmahajan@gmail.com</h3></div>
+            <div class="invite-accept"><button>Accept</button></div>
+            <div class="invite-reject"><button>Reject</button></div>
+        </div>
+        </div>
         </div>
         <?php
         require_once('inviteprocess2.php');
