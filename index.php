@@ -37,18 +37,18 @@
             <div class="page-buttons">
 	            <div class="container">
 	                <div class="column">
-		                <p> This is first column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/invite.php'" class="invite-players">Invite Players</button>
+                        <div class="column-image"><img src="Add people-01.png" width="200" height="200"/></div>
+                        <div><button  onclick="window.location.href='secondarypages/invite.php'" class="invite-players">Invite Players</button></div>
 	                </div>
 	                
                     <div class="column">
-		                <p> This is second column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/viewteam.php'" class="view-team">View Team</button>
+                        <div class="column-image"><img src="group-01.png" width="200" height="200"/></div>
+                        <div class="button-index"><button  onclick="window.location.href='secondarypages/viewteam.php'" class="view-team">View Team</button></div>
 	                </div>
 
 	                <div class="column">
-		                <p> This is third column of our grid system</p>
-                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
+                        <div class="column-image"><img src="turficon-01.png" width="200" height="200"/></div>
+                        <div><button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button></div>
                     </div>
 	            </div>      
             </div>
