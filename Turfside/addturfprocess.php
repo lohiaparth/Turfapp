@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 
-echo "hello";
+
 
 
 ?> 
@@ -16,7 +16,7 @@ if(isset($_POST)){
         
 
     
-   
+   //print_r($_POST);
     $name       = $_POST['name'];
     echo $name;
     $email      = $_POST['email'];
