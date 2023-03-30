@@ -97,25 +97,25 @@
                      <!-- Sports -->
 
                       <!-- Submit -->
-                      <div class="CTA">
+                      <!-- <div class="CTA">
                         <input type="submit" value="List Turf" id="submit" name="create">
-                     </div>
+                     </div> -->
                      <!-- <div>
                         <button type="submit" value="List Turf" id="submit" name="create">List Turf</button>
                      </div> -->
                      <!-- Submit -->
 
                      <!-- Images -->
-                     <div class="form-group"></div>
+                     <div class="form-group">
                         <label for="images">Images: </label>
                         <input type="file" accept="image/*" id="images" name="images" class="images" style="margin-left: 100px; border:none; " >
                      </div>
                      <!-- Images -->
 
                      <!-- Submit -->
-                     <!-- <div class="CTA">
+                     <div class="CTA">
                         <input type="submit" value="List Turf" id="submit" name="create">
-                     </div> -->
+                     </div>
                      <!-- <div>
                         <button type="submit" value="List Turf" id="submit" name="create">List Turf</button>
                      </div> -->

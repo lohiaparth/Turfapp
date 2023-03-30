@@ -3,15 +3,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="findmatch.css">
+    <link rel="stylesheet" href="invite.css">
     <script src="https://use.fontawesome.com/7fe15ee35c.js"></script>
     
     <title>INVITE</title>
 </head>
 <body>
-    <h1>INVITE</h1>
-
-    <div class="sort-row">
+            <header>
+            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+                    <li><a href="/Turfapp/Turfside/addturf.php">List Turf</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+            <!-- <a class="cta" href="/Turfapp/Siddhi/Review.html">Review</a> -->
+        </header>
+    <div class="sort-row1">
 
         <div class="wrap">
             <div class="search">
@@ -26,7 +35,7 @@
 
     </div>
 
-    <div class="sort-row">
+    <div class="sort-row2">
         <?php
         require_once('inviteprocess2.php');
         ?>
