@@ -9,19 +9,19 @@
     <title>INVITE</title>
 </head>
 <body>
-            <header>
-            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
-                    <li><a href="/Turfapp/Turfside/addturf.php">List Turf</a></li>
-                    <li><a href="">About</a></li>
-                </ul>
-            </nav>
-            <!-- <a class="cta" href="/Turfapp/Siddhi/Review.html">Review</a> -->
-        </header>
+<header>
+   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+      <nav>
+         <ul class="nav__links">
+            <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+         </ul>
+      </nav>
+</header>
     <div class="sort-row1">
-
+        <h1 class="h1-invite">INVITE</h1>
+        <h5 class="h5-invite">Invite you team members</h5>
         <div class="wrap">
             <div class="search">
                 <input type="text" class="searchTerm" id="invitee" placeholder="Enter email of the person you want to invite">
@@ -36,6 +36,37 @@
     </div>
 
     <div class="sort-row2">
+        <!-- <table style='border:solid 2px;'>
+        <tr>
+            <td>siddhi@gmail.com</td>
+            <td>accept</td>
+            <td>reject</td>
+        </tr>
+        
+        </table> -->
+        <div class="page-buttons">
+        <div class="container">
+            <div class="column">
+		                <p> This is first column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/invite.php'" class="invite-players">Invite Players</button>
+	                </div>
+	                
+                    <div class="column">
+		                <p> This is second column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/viewteam.php'" class="view-team">View Team</button>
+	                </div>
+
+	                <div class="column">
+		                <p> This is third column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
+                    </div>
+                    <div class="column">
+		                <p> This is third column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php
         require_once('inviteprocess2.php');
         ?>
