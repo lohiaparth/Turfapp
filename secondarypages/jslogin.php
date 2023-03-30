@@ -18,7 +18,7 @@ if($result){
 		// echo $_SESSION['user_email'];
 		echo '1';
 	}else{
-		echo 'There no user for that combo';		
+		// echo 'There no user for that combo';		
 	}
 }else{
 	echo 'There were errors while connecting to database.';
