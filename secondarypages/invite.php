@@ -21,7 +21,7 @@
 </header>
     <div class="sort-row1">
         <h1 class="h1-invite">INVITE</h1>
-        <h5 class="h5-invite">Invite you team members</h5>
+        <h5 class="h5-invite">Invite your team members</h5>
         <div class="wrap">
             <div class="search">
                 <input type="text" class="searchTerm" id="invitee" placeholder="Enter email of the person you want to invite">

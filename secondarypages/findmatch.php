@@ -14,8 +14,19 @@ require_once("config.php");
     <title>Find Match</title>
 </head>
 <body>
+<header>
+   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+      <nav>
+         <ul class="nav__links">
+            <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+         </ul>
+      </nav>
+</header>
     <div class="sort-row">
-
+        <h1 class="h1-invite">FIND</h1>
+        <h5 class="h5-invite">Find your team members</h5>
         <div class="wrap">
             <div class="search">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -61,19 +72,19 @@ require_once("config.php");
                 <img src="Bg4.webp" alt="" class="img_size"> <!-- turf image -->
             </div> 
             <div class="turf-name">
-                <h1>Orlem lawn</h1>
+                <h2 class="h2-invite">Orlem lawn</h2>
             </div>
             <div class="turf-address">
                 <!-- turf address -->
-                <h3>Orlem, malad , mumbai</h3>
+                <h3 class="h3-invite">Orlem, malad , mumbai</h3>
             </div>
             <div class="turf-contact">
                 <!-- turf contacts -->
-                <h3>9000001234</h3><h3>9000005678</h3>
+                <h3 class="h3-invite">9000001234</h3><h3 class="h3-invite">9000005678</h3>
             </div>
             <div class="turf-sports">
                 <!-- turf sports -->
-                <h4>basketball & football</h4>
+                <h4 class="h4-invite">basketball & football</h4>
             </div>
         </div>
     </div>
