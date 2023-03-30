@@ -16,17 +16,25 @@ $stmtselect = $db->prepare($sql);
 $result = $stmtselect->execute([$invitee]);
 
 if($stmtselect->rowCount() > 0){
-    // echo $stmtselect->rowCount() > 0;
-    $new_sql = "INSERT INTO invites (inviter, invitee) VALUES(?,?)";
-    $stmtinsert = $db->prepare($new_sql);
-    $final_result = $stmtinsert->execute([$_SESSION['user_email'], $invitee]);
-    echo 'invite sent';
+    $sql = "SELECT * FROM invites WHERE inviter = ? AND invitee = ?";
+    $stmtselect2 = $db->prepare($sql);
+    $result = $stmtselect2->execute([$_SESSION['user_email'], $invitee]);
 
-    // if($final_result){
-    //     echo 'invite sent';
-    // }else{
-    //     echo 'invite not sent';
-    // }
+
+
+    if($stmtselect2->rowCount() > 0 && strcmp($_SESSION['user_email'], $invitee) === 0){
+        echo 'An invite from you to this user already exists.';
+    }else{
+        $new_sql = "INSERT INTO invites (inviter, invitee) VALUES (?, ?)";
+        $stmtinsert = $db->prepare($new_sql);
+        $final_result = $stmtinsert->execute([$_SESSION['user_email'], $invitee]);
+
+        if($final_result){
+            echo 'Invite sent successfully.';
+        }else{
+            echo 'Error sending invite.';
+        }
+    }
 }else{
     echo 'invitee not found';
 }
