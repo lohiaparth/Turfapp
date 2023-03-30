@@ -69,6 +69,7 @@ body{
   /* text-align: center; */
   font-size: 20px;
   color: #0c2605;
+  margin-top: 3px;
 }
 .h4-invite{
   font-family: "Montserrat", sans-serif;
@@ -76,6 +77,7 @@ body{
   /* text-align: center; */
   font-size: 17px;
   color: #0c2605;
+  margin-top: 3px;
 }
 
 .h2-invite{
@@ -176,4 +178,24 @@ header {
 
 .nav__links li a:hover {
   color: #a9b388;
+}
+
+button.selection{
+  margin-right: 20px;
+  padding: 9px 25px;
+  font-size: 20px;
+  background-color: #548c1c;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #2e590e;
 }

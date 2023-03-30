@@ -86,6 +86,10 @@ require_once("config.php");
                 <!-- turf sports -->
                 <h4 class="h4-invite">basketball & football</h4>
             </div>
+            <div class="turf-sports">
+                <!-- selection button -->
+                <button class="selection">Select</button>
+            </div>
         </div>
     </div>
 

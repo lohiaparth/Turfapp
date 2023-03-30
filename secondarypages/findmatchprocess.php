@@ -47,6 +47,10 @@ if ($result->rowCount() > 0) {
                 <!-- turf sports -->
                 <h4 class='h4-invite'>".$row["sport"]."</h4>
             </div>
+            <div class='turf-sports'>
+                <!-- selection button -->
+                <button class='selection'>Select</button>
+            </div>
         </div>
     </div>
     <br>";
