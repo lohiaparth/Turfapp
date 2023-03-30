@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+            <!-- <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> -->
             <nav>
                 <ul class="nav__links">
-                    <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
-                    <li><a href="/Turfapp/Turfside/addturf.php">List Turf</a></li>
-                    <li><a href="">About</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html#about">About</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="/Turfapp/Siddhi/Review.html">Review</a>
+            <!-- <a class="cta" href="/Turfapp/Siddhi/Review.html">Review</a> -->
         </header>
         <div class="view">
           <div class="left-view">

@@ -9,12 +9,12 @@
 </head>
 <body style="background-color: #0c2605;">
         <header>
-            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+            <!-- <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> -->
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html#about">About</a></li>
+                <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
                 </ul>
             </nav>
             <a class="cta" onclick="window.location.href='Siddhi/Home.html'">Log Out</a>

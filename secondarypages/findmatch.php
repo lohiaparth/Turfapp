@@ -15,18 +15,18 @@ require_once("config.php");
 </head>
 <body>
 <header>
-   <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+   <!-- <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> -->
       <nav>
          <ul class="nav__links">
             <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
-            <li><a href="#">About</a></li>
-           <li><a href="/Turfapp/Siddhi/Review.html">Review</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#about">About</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
          </ul>
       </nav>
 </header>
     <div class="sort-row">
         <h1 class="h1-invite">FIND</h1>
-        <h5 class="h5-invite">Find your team members</h5>
+        <h5 class="h5-invite">Find your Turf</h5>
         <div class="wrap">
             <div class="search">
                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
