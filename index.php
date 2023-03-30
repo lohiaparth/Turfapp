@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <title>HOME</title>
 </head>
-<body style="background-color: #030c1f;">
+<body style="background-color: #0c2605;">
         <header>
             <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
             <nav>
@@ -35,12 +35,23 @@
 
         <div class="row">
             <div class="page-buttons">
+	            <div class="container">
+	                <div class="column">
+		                <p> This is first column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/invite.php'" class="invite-players">Invite Players</button>
+	                </div>
+	                
+                    <div class="column">
+		                <p> This is second column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/viewteam.php'" class="view-team">View Team</button>
+	                </div>
 
-                <button  onclick="window.location.href='secondarypages/invite.php'">Invite Players</button>
-                <button  onclick="window.location.href='secondarypages/viewteam.php'">View Team</button>
-                <button  onclick="window.location.href='secondarypages/findmatch.php'">Find Match</button>
+	                <div class="column">
+		                <p> This is third column of our grid system</p>
+                        <button  onclick="window.location.href='secondarypages/findmatch.php'" class="find-match">Find Match</button>
+                    </div>
+	            </div>      
             </div>
-
         </div>
 </body>
 </html>
