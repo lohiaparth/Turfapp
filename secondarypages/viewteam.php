@@ -28,8 +28,11 @@
           </div>
           <div class="right-view">
             <div class="view-text">
-              <div class="view-fri">
-                <div>
+              
+                <?php
+                require_once('viewteamprocess.php');
+                ?>
+                <!-- <div>
                   <h2 class="view-name">SIDDHI</h2>
                 </div>
                 <div>
@@ -37,10 +40,13 @@
                 </div>
                 <div>
                   <h6 class="view-numb">8668674185</h6>
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
+        <?php
+        // require_once("viewteamprocess.php");
+        ?>
 </body>
 </html>
