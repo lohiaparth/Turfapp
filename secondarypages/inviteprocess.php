@@ -22,8 +22,10 @@ if($stmtselect->rowCount() > 0){
 
 
 
-    if($stmtselect2->rowCount() > 0 && strcmp($_SESSION['user_email'], $invitee) === 0){
+    if($stmtselect2->rowCount() > 0) {
         echo 'An invite from you to this user already exists.';
+    }else if(strcmp($_SESSION['user_email'], $invitee) === 0){
+        echo 'Cannot send invite to yourself';
     }else{
         $new_sql = "INSERT INTO invites (inviter, invitee) VALUES (?, ?)";
         $stmtinsert = $db->prepare($new_sql);
