@@ -27,7 +27,7 @@
                   <h6 class="view-numb">₹200</h6>
                 </div>
             </div> -->
-            <button>payment</button>
+            <button class="total">payment</button>
             </div>
         </div>
     </div>
