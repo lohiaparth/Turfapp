@@ -16,14 +16,18 @@
         <h5 class="h5-invite">Please pay your bill</h5>
         <div class="wrap">
             <div class="view-text">
-                <div class="view-fri">
+                <?php
+                require_once("billingpageprocess.php");
+                ?>
+                <!-- <div class="view-fri">
                     <div>
                   <h2 class="view-name">siddhidmahajan@gmail.com</h2>
                 </div>
                 <div>
                   <h6 class="view-numb">₹200</h6>
                 </div>
-            </div>
+            </div> -->
+            <button>payment</button>
             </div>
         </div>
     </div>
