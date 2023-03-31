@@ -47,14 +47,7 @@
         </tr>
         
         </table> -->
-        <div class="invite-class">
-        <div class="invite">
-            <div class="invite-ele"><h3>siddhidmahajan@gmail.com</h3></div>
-            <div class="invite-accept"><button>Accept</button></div>
-            <div class="invite-reject"><button>Reject</button></div>
-        </div>
-        </div>
-        </div>
+        
         <?php
         require_once('inviteprocess2.php');
         ?>
