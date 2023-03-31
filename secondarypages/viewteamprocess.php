@@ -11,7 +11,7 @@ $inviter_email = $_SESSION['user_email'];
 
 $stmt = $db->prepare($sql);
 $result = $stmt->execute([$inviter_email]);
-echo $stmt->rowCount;
+// echo $stmt->rowCount;
 
 if($stmt->rowCount() > 0){
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

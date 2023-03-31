@@ -47,6 +47,10 @@ if ($result->rowCount() > 0) {
                 <!-- turf sports -->
                 <h4 class='h4-invite'>".$row["sport"]."</h4>
             </div>
+            <div class='turf-sports-money'>
+                <!-- turf sports -->
+                <h4 class='h3-invite' style='font-weight:bold;'>₹2000</h4>
+            </div>
             <div class='turf-sports'>
                 <!-- selection button -->
                 <a href='billingpage.php'>

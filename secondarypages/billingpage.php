@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Billing</h1>
+    <?php
+    require_once("billingpageprocess.php");
+    ?>
     
 </body>
 </html>
