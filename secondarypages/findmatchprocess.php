@@ -49,7 +49,9 @@ if ($result->rowCount() > 0) {
             </div>
             <div class='turf-sports'>
                 <!-- selection button -->
-                <button class='selection'>Select</button>
+                <a href='billingpage.php'>
+                <button class='selection' >Select</button>
+                </a>
             </div>
         </div>
     </div>
