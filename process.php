@@ -7,6 +7,7 @@ require_once('config.php');
  <?php
 
 if(isset($_POST)){
+
         
 
     
@@ -26,6 +27,8 @@ if(isset($_POST)){
     $result = $stmtinsert->execute([$fullname, $email, $phone, $aadhar, $password]);
 
     if($result){
+ 
+
         echo 'Successfully saved!';
 
     }else{
