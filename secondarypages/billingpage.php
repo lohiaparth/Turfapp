@@ -8,8 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    
-   
+<header>
+   <!-- <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a> -->
+      <nav>
+         <ul class="nav__links">
+            <li><a href="/Turfapp/Siddhi/Home.html">Home</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#about">About</a></li>
+            <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
+         </ul>
+      </nav>
+</header>
     
     <div class="sort-row1">
         <h1 class="h1-invite">BILLING</h1>
@@ -27,7 +35,7 @@
                   <h6 class="view-numb">₹200</h6>
                 </div>
             </div> -->
-            <button>payment</button>
+            <button class="total">payment</button>
             </div>
         </div>
     </div>
