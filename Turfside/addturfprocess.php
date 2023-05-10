@@ -34,7 +34,7 @@ if(isset($_POST)){
     $sportstring = implode(',',$sport);
     echo $sportstring;
     $images     = $_POST['images'];
-    echo $images;
+    // echo $images;
 
     // $base64_image = base64_encode(file_get_contents($image));
 
@@ -51,6 +51,7 @@ if(isset($_POST)){
 $sql = "INSERT INTO turfs (name, email, contact1, contact2, address, sport, images) VALUES(?,?,?,?,?,?,?)";
 $stmtinsert = $db->prepare($sql);
 $result = $stmtinsert->execute([$name, $email, $contact1, $contact2, $address, $sportstring, $images ]);
+echo $result;
 
 }
 
