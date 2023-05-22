@@ -4,11 +4,19 @@ require_once("config.php");
 
 <?php
 
-if (isset($_POST['sort']) && $_POST['sort'] == 'names') {
-    $sql = "SELECT * FROM turfs ORDER BY name ASC";
-  } else {
+if(isset($_POST['searchTerm'])){
+    $keyword = $_POST['searchTerm'];
+    $sql = "SELECT * FROM turfs WHERE name LIKE '%$keyword%' OR address LIKE '%$keyword%' OR sport LIKE '%$keyword%'";
+} else{
     $sql = "SELECT * FROM turfs";
-  }
+    // echo "Bye";
+}
+
+// if (isset($_POST['sort']) && $_POST['sort'] == 'names') {
+//     $ordersql = " ORDER BY name ASC";
+//     $sql = $sql.$ordersql;
+//     echo $sql;
+//   } 
 
 $result = $db->query($sql);
 
