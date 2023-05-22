@@ -29,8 +29,8 @@ require_once("config.php");
         <h5 class="h5-invite">Find your Turf</h5>
         <div class="wrap">
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
+                <input type="text" class="searchTerm" id="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton" id="searchButton">
                     <i class="fa fa-search"></i>
                 </button>
                 <button type="" class="searchButton" id="sortButton" style="margin-left: 4px; border-radius: 5px;">
@@ -38,6 +38,23 @@ require_once("config.php");
                     
                 </button>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $('#searchButton').click(function(){
+                            $.ajax({
+                                url: 'findmatchprocess.php',
+                                type: 'post',
+                                data: { searchTerm: $('#searchTerm').val() },
+                                success: function(response){
+                                    // Replace the existing content of the turf-container div with the updated results
+                                    $('#turf-container').html(response);
+
+                                }
+
+                            })
+                        })
+                    })
+                </script>
                 <script>
                     $(document).ready(function() {
                         $('#sortButton').click(function() {
