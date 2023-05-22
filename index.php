@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_email']) || empty($_SESSION['user_email'])) {
+    // Redirect the user to the login page or any desired page
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +28,8 @@
                 <li><a href="/Turfapp/Siddhi/Home.html#review">Review</a></li>
                 </ul>
             </nav>
-            <a class="cta" onclick="window.location.href='Siddhi/Home.html'">Log Out</a>
+            <a class="cta" href="logout.php">Log Out</a>
+            <a class="cta"><?php echo $_SESSION['user_email']; ?> </a>
         </header>
 
         <script src="slider-script.js"></script>
@@ -53,5 +65,8 @@
 	            </div>      
             </div>
         </div>
+        <!-- <h1>Session Variables:</h1>
+        <p>Variable 1: </p> -->
+        
 </body>
 </html>
