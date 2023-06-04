@@ -61,8 +61,8 @@ if ($result->rowCount() > 0) {
             </div>
             <div class='turf-sports'>
                 <!-- selection button -->
-                <a href='billingpage.php'>
-                <button class='selection' >Select</button>
+                
+                <button class='selection' id='selectButton'><a href='slots.php?turfname=".$row["name"]."'>Select</a></button>
                 </a>
             </div>
         </div>
