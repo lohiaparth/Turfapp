@@ -3,6 +3,8 @@
 require_once('config.php');
 require_once('jslogin.php');
 
+// For invitee to see his team
+
 $sql = "SELECT team.invitee, users.fullname, users.phone 
         FROM team 
         INNER JOIN users ON team.invitee = users.email
@@ -14,7 +16,10 @@ $result = $stmt->execute([$inviter_email]);
 // echo $stmt->rowCount;
 
 if($stmt->rowCount() > 0){
+   $count = 1;
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+      $count = $count + 1;
+
         echo "<div class='view-fri'>
         <div>
           <h2 class='view-name'>".$row["fullname"]."</h2>
@@ -27,7 +32,10 @@ if($stmt->rowCount() > 0){
         </div>
         </div>";
     }
+    echo $count;
 }else{
+
+      // For inviter to see his team --- !!!
       $invitee_email = $_SESSION['user_email'];
       $sql = "SELECT team.inviter, users.fullname, users.phone FROM team INNER JOIN users ON team.inviter = users.email WHERE invitee = '$invitee_email'";
       // echo $sql;
@@ -39,6 +47,7 @@ if($stmt->rowCount() > 0){
       if($stmt->rowCount() > 0){
             while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
               $main_inviter = $row["inviter"];
+              // Displays inviter details --- !!!
                 echo "<div class='view-fri'>
                 <div>
                   <h2 class='view-name'>".$row["fullname"]."</h2>
@@ -51,7 +60,7 @@ if($stmt->rowCount() > 0){
                 </div>
                 </div>";
             }
-
+              // Displays other invitees --- !!!
             $sql = "SELECT team.invitee, users.fullname, users.phone 
                     FROM team 
                     INNER JOIN users ON team.invitee = users.email
@@ -64,7 +73,9 @@ if($stmt->rowCount() > 0){
             // echo $stmt->rowCount();
 
             if($stmt->rowCount() > 0){
+              $count = 1;
                 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                  $count = $count + 1;
                   if($row["invitee"] == $_SESSION["user_email"]){
                     continue;
                   }
@@ -80,6 +91,7 @@ if($stmt->rowCount() > 0){
                     </div>
                     </div>";
                 }
+                echo $count;
               }    
 
         }else{
