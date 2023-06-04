@@ -44,7 +44,7 @@ require_once("config.php");
                             $.ajax({
                                 url: 'findmatchprocess.php',
                                 type: 'post',
-                                data: { searchTerm: $('#searchTerm').val() },
+                                data: { searchTerm: $('#searchTerm').val() },   
                                 success: function(response){
                                     // Replace the existing content of the turf-container div with the updated results
                                     $('#turf-container').html(response);
@@ -80,39 +80,18 @@ require_once("config.php");
             require("findmatchprocess.php");
         ?>
     </div>
-    <div class="turf-box">
-        <!-- <div class="img">
-            <img src="Bg4.webp" alt="" class="img_size"> turf image -->
-        <!-- </div> -->
-        <div class="turf-details">
-            <div class="img">
-                <img src="Bg4.webp" alt="" class="img_size"> <!-- turf image -->
-            </div> 
-            <div class="turf-name">
-                <h2 class="h2-invite">Orlem lawn</h2>
-            </div>
-            <div class="turf-address">
-                <!-- turf address -->
-                <h3 class="h3-invite">Orlem, malad , mumbai</h3>
-            </div>
-            <div class="turf-contact">
-                <!-- turf contacts -->
-                <h3 class="h3-invite">9000001234</h3><h3 class="h3-invite">9000005678</h3>
-            </div>
-            <div class="turf-sports">
-                <!-- turf sports -->
-                <h4 class="h4-invite">basketball & football</h4>
-            </div>
-            <div class="turf-sports-money">
-                <!-- turf sports -->
-                <h4 class="h3-invite" style="font-weight:bold;">₹2000</h4>
-            </div>
-            <div class="turf-sports">
-                <!-- selection button -->
-                <button class="selection">Select</button>
-            </div>
-        </div>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            $.ajax({
+                url: 'teammatchprocess.php',
+                type: 'post',
+                data: {turfName: }
+            })
+        })
+    </script> -->
+
+    
 
     
 </body>
