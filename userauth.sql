@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 10, 2023 at 02:27 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Host: localhost
+-- Generation Time: Jun 05, 2023 at 03:43 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -46,7 +46,53 @@ INSERT INTO `invites` (`id`, `inviter`, `invitee`) VALUES
 (6, 'siddhidmahajan@gmail.com', 'dineshdmahajan@gmail.com '),
 (7, 'siddhidmahajan@gmail.com', 'dineshdmahajan@gmail.com'),
 (8, 'harshimaniar@gmail.com', 'siddhidmahajan@gmail.com'),
-(9, 'anushkamahajan@gmail.com', 'siddhidmahajan@gmail.com');
+(9, 'anushkamahajan@gmail.com', 'siddhidmahajan@gmail.com'),
+(10, 'parthlohia@gmail.com', 'parth.r.lohia@gmail.com'),
+(12, 'parthlohia@gmail.com', 'harshimaniar@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `matches`
+--
+
+CREATE TABLE `matches` (
+  `id` int(11) NOT NULL,
+  `turf` varchar(100) NOT NULL,
+  `date` date NOT NULL,
+  `slot` varchar(100) NOT NULL,
+  `inviter1` varchar(100) NOT NULL,
+  `inviter2` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `matches`
+--
+
+INSERT INTO `matches` (`id`, `turf`, `date`, `slot`, `inviter1`, `inviter2`) VALUES
+(2, 'Siddhi', '2023-05-30', 'morning', 'parthlohia@gmail.com', NULL),
+(3, 'Siddhi', '2023-06-29', 'morning', 'parthlohia@gmail.com', 'parthlohia@gmail.com'),
+(4, 'Siddhi', '2023-06-29', 'afternoon', 'parthlohia@gmail.com', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `team`
+--
+
+CREATE TABLE `team` (
+  `id` int(11) NOT NULL,
+  `inviter` varchar(100) NOT NULL,
+  `invitee` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `team`
+--
+
+INSERT INTO `team` (`id`, `inviter`, `invitee`) VALUES
+(1, 'parthlohia@gmail.com', 'parth.r.lohia@gmail.com'),
+(3, 'parthlohia@gmail.com', 'harshimaniar@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -103,7 +149,8 @@ INSERT INTO `users` (`id`, `fullname`, `email`, `phone`, `aadhar`, `password`) V
 (2, 'Dinesh Mahajan', 'dineshdmahajan@gmail.com', '9867327925', '123412341234', 'Dinesh123'),
 (3, 'harshi maniar', 'harshimaniar@gmail.com', '9876543210', '123434567890', 'harshi123'),
 (4, 'anushka mahajan', 'anushkamahajan@gmail.com', '9167139925', '123435456789', 'anushka123'),
-(5, 'Parth lohia', 'parthlohia@gmail.com', '9876543210', '123456789012', 'parth123');
+(5, 'Parth lohia', 'parthlohia@gmail.com', '9876543210', '123456789012', 'parth123'),
+(6, 'parthlohia', 'parth.r.lohia@gmail.com', '8850391216', '123456789012', '1234567890');
 
 --
 -- Indexes for dumped tables
@@ -113,6 +160,18 @@ INSERT INTO `users` (`id`, `fullname`, `email`, `phone`, `aadhar`, `password`) V
 -- Indexes for table `invites`
 --
 ALTER TABLE `invites`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `matches`
+--
+ALTER TABLE `matches`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `team`
+--
+ALTER TABLE `team`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -135,7 +194,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `invites`
 --
 ALTER TABLE `invites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `matches`
+--
+ALTER TABLE `matches`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `team`
+--
+ALTER TABLE `team`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `turfs`
@@ -147,7 +218,7 @@ ALTER TABLE `turfs`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
