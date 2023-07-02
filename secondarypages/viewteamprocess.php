@@ -3,7 +3,7 @@
 require_once('config.php');
 require_once('jslogin.php');
 
-// For invitee to see his team
+// if invitee exist display inviter and then display all other invitees of that inviter
 
 $sql = "SELECT team.invitee, users.fullname, users.phone 
         FROM team 
@@ -92,7 +92,11 @@ if($stmt->rowCount() > 0){
                     </div>";
                 }
                 echo $count;
-              }    
+              
+              
+              }
+              
+              
 
         }else{
             echo "no records";
@@ -106,4 +110,3 @@ if($stmt->rowCount() > 0){
 
 
 
-// if invitee exist display inviter and then display all other invitees of that inviter

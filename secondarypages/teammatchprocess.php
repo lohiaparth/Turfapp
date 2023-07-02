@@ -6,6 +6,9 @@ require_once('config.php');
 require_once('jslogin.php'); 
     //For Session variables
 
+include 'viewteamprocess.php';
+    //For count variable which has number of team members    
+
 
 if(isset($_POST)){
     $date = $_POST['date'];
@@ -16,6 +19,10 @@ if(isset($_POST)){
     
 
 }
+
+
+
+
 
 $email = $_SESSION['user_email'];
 
@@ -38,6 +45,8 @@ $result = $stmtselect->execute([$turfname,$date,$time]);
 // CASE 1: INVITER1 IS WAITING FOR MATCH
 if($stmtselect->rowCount() > 0){
 
+    // echo $count;
+
     $row = $stmtselect->fetch(PDO::FETCH_ASSOC);
     $inviter1 = $row['inviter1'];
 
@@ -49,7 +58,7 @@ if($stmtselect->rowCount() > 0){
                     WHERE turf = '$turfname'
                     AND date = '$date'
                     AND slot = '$time'";
-        echo $new_sql;   
+        // echo $new_sql;   
 
         $stmtselect = $db->prepare($new_sql);
         $result = $stmtselect->execute();
@@ -62,11 +71,11 @@ if($stmtselect->rowCount() > 0){
 // CASE 2: NO TEAM HAS SELECTED THIS TURF BEFORE
 else{
     // echo "bye";
-    $new_sql = "INSERT INTO matches (turf,date,slot,inviter1) 
-                VALUES (?,?,?,?)";
-    echo $new_sql;
+    $new_sql = "INSERT INTO matches (turf,date,slot,count,inviter1) 
+                VALUES (?,?,?,?,?)";
+    // echo $new_sql;
 
     $stmtselect = $db->prepare($new_sql);
-    $result = $stmtselect->execute([$turfname,$date,$time,$email]); 
+    $result = $stmtselect->execute([$turfname,$date,$time,$count,$email]); 
 }
 
