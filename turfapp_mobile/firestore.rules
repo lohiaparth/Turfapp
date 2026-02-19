@@ -1,0 +1,47 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ────────────────────────────────────────────────────
+    function isLoggedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return request.auth.uid == uid;
+    }
+
+    // ── users ───────────────────────────────────────────────────────────────
+    // Each user can only read/write their own document
+    match /users/{uid} {
+      allow read, write: if isLoggedIn() && isOwner(uid);
+    }
+
+    // ── turfs ───────────────────────────────────────────────────────────────
+    // Anyone logged in can read turfs (discover)
+    // Only the owner (ownerUid == auth.uid) can create/update/delete
+    match /turfs/{turfId} {
+      allow read: if isLoggedIn();
+      allow create: if isLoggedIn()
+        && request.resource.data.ownerUid == request.auth.uid;
+      allow update, delete: if isLoggedIn()
+        && resource.data.ownerUid == request.auth.uid;
+    }
+
+    // ── bookings ─────────────────────────────────────────────────────────────
+    // Players can create bookings for themselves
+    // Players can read/update their own bookings
+    // Turf owners can read bookings for their turfs (queried by turfId)
+    match /bookings/{bookingId} {
+      allow create: if isLoggedIn()
+        && request.resource.data.playerUid == request.auth.uid;
+      allow read: if isLoggedIn()
+        && (resource.data.playerUid == request.auth.uid
+          || get(/databases/$(database)/documents/turfs/$(resource.data.turfId)).data.ownerUid == request.auth.uid);
+      allow update: if isLoggedIn()
+        && resource.data.playerUid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']);
+    }
+  }
+}

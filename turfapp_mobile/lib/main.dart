@@ -1,0 +1,31 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'app.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.light,
+  ));
+
+  // NOTE: Run flutterfire configure to generate firebase_options.dart
+  // then pass FirebaseOptions to Firebase.initializeApp().
+  try {
+    await Firebase.initializeApp();
+  } catch (_) {}
+
+  runApp(
+    const ProviderScope(
+      child: TurfApp(),
+    ),
+  );
+}
